@@ -1,0 +1,9 @@
+kind: ManagedClustersSet # not a k8s resource, but the formatting is intentionally similar.
+metadata:
+  name: east-region-hoh-set # name of set
+  group: hub-of-hubs.open-cluster-management.io # group of set
+spec:
+  identifiers: # can contain multiple hub-identifier entries
+    HubIdentifier:
+      name: 'hub4' # hub name
+      managedClusterIdentifiers: ['cluster7', 'cluster8'] # currently, MCs are identified by name.
