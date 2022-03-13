@@ -6,5 +6,5 @@ spec:
   identifiers: # can contain multiple hub-identifier entries
     HubIdentifier:
       name: 'hub4' # hub name
-      managedClusterIdentifiers: ['cluster5', 'cluster6', 'cluster7'] # currently, MCs are identified by name.
+      managedClusterIdentifiers: ['cluster6', 'cluster7'] # currently, MCs are identified by name.
   # identified MCs will be labeled with {metadata.group}/{metadata.name}=hoh-tag.
