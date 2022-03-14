@@ -6,4 +6,4 @@ spec:
   identifiers: # can contain multiple hub-identifier entries
     hubIdentifier:
       name: 'hub4' # hub name
-      managedClusterIdentifiers: ['cluster7', 'cluster8'] # currently, MCs are identified by name.
+      managedClusterIdentifiers: ['cluster7', 'cluster8', 'cluster9'] # currently, MCs are identified by name.
