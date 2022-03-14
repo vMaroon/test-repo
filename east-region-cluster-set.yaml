@@ -2,7 +2,7 @@ kind: ManagedClustersGroup # not a k8s resource, but the formatting is intention
 metadata:
   name: east-region-group # name of set
 spec:
-  tag-value: 'true'
+  tagValue: 'true'
   identifiers: # can contain multiple hub-identifier entries
     - hubIdentifier:
         name: hub4 # hub name
