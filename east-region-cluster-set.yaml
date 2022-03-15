@@ -5,7 +5,7 @@ spec:
   tagValue: 'true'
   identifiers: # can contain multiple hub-identifier entries
     - hubIdentifier:
-        name: hub4 # hub name
+        name: hub3 # hub name
         managedClusterIdentifiers: # currently, MCs are identified by name.
           - cluster5
           - cluster6
