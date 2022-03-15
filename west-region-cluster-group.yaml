@@ -1,0 +1,18 @@
+kind: ManagedClustersGroup
+metadata:
+  name: west-region-group
+spec:
+  tagValue: 'HoH'
+  identifiers:
+    - hubIdentifier:
+        name: hub3 # hub name
+        managedClusterIdentifiers: # currently, MCs are identified by name.
+          - cluster5
+          - cluster6
+          - cluster8
+          - cluster9
+    - hubIdentifier:
+        name: hub4 # hub name
+        managedClusterIdentifiers: # currently, MCs are identified by name.
+          - cluster5
+  # identified MCs will be labeled with hub-of-hubs.open-cluster-management.io/{metadata.name}={spec.tagValue}
