@@ -34,29 +34,3 @@ spec:
                 spec:
                   encryption:
                     type: aescbc
----
-apiVersion: policy.open-cluster-management.io/v1
-kind: PlacementBinding
-metadata:
-  name: binding-policy-etcdencryption-gitops-hohset
-  namespace: default
-placementRef:
-  name: placement-policy-etcdencryption-gitops-hohset
-  kind: Placement
-  apiGroup: cluster.open-cluster-management.io
-subjects:
-  - name: policy-etcdencryption-gitops-hohset
-    kind: Policy
-    apiGroup: policy.open-cluster-management.io
----
-apiVersion: cluster.open-cluster-management.io/v1alpha1
-kind: Placement
-metadata:
-  name: placement-policy-etcdencryption-gitops-hohset
-  namespace: default
-spec:
-  predicates:
-    - requiredClusterSelector:
-        labelSelector:
-          matchLabels:
-            vendor: Kind
