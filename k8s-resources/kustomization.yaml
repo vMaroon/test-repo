@@ -1,5 +1,5 @@
 resources:
   - placement.yaml
-  - binding.yaml
+  - placementbinding.yaml
   - policy.yaml
   - managedclustersetbinding.yaml
